@@ -41,7 +41,7 @@ AWS_AutoScaling/
 │   ├── setup_script.sh       # Script for stress testing
 ├── install_and_run.sh        # Script to automate Terraform execution
 └── README.md                 # Project documentation
-
+՝՝՝
 
 # Terraform Automation Script 🛠️
 
