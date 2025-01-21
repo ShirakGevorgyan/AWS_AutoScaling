@@ -30,16 +30,15 @@ This project demonstrates the creation and configuration of a **scalable AWS Aut
 ---
 
 ## 📂 Project Structure
+
+```plaintext
 AWS_AutoScaling/
 ├── terraform/
-│   ├── main.tf               # Main Terraform configuration for AWS resources
+│   ├── main.tf               # Main Terraform configuration
 │   ├── variables.tf          # Input variables for Terraform
 │   ├── outputs.tf            # Outputs from Terraform configuration
 │   ├── provider.tf           # AWS provider configuration
-│   ├── data.tf               # Data sources used in Terraform
-│   ├── hashicorp_version.tf  # Required Terraform version
-│   ├── setup_script.sh       # Bash script for instance configuration and stress testing
-├── .gitignore                # Ignored files for Git
+│   ├── setup_script.sh       # Script for stress testing
 ├── install_and_run.sh        # Script to automate Terraform execution
 └── README.md                 # Project documentation
 
