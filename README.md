@@ -31,7 +31,7 @@ This project demonstrates the creation and configuration of a **scalable AWS Aut
 
 ## 📂 Project Structure
 
-```plaintext
+\`\`\`plaintext
 AWS_AutoScaling/
 ├── terraform/
 │   ├── main.tf               # Main Terraform configuration
@@ -41,7 +41,8 @@ AWS_AutoScaling/
 │   ├── setup_script.sh       # Script for stress testing
 ├── install_and_run.sh        # Script to automate Terraform execution
 └── README.md                 # Project documentation
-՝՝՝
+\`\`\`
+
 
 # Terraform Automation Script 🛠️
 
