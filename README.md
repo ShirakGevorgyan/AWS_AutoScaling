@@ -139,7 +139,7 @@ Before you begin, ensure the following are ready:
      sudo apt install terraform
      ```
 
-Clone the Repository
+# Clone the Repository
 
 git clone git@github.com:ShirakGevorgyan/AWS_AutoScaling.git
 cd AWS_AutoScaling
@@ -155,7 +155,7 @@ Apply the Terraform configuration.
 Prompt you to destroy the infrastructure after testing.
 
 
-⚙️ Workflow and Testing
+# ⚙️ Workflow and Testing
 
 1. Terraform Configuration
       Provisions Auto Scaling Groups, Launch Templates, CloudWatch Alarms, and SNS topics.
@@ -175,7 +175,7 @@ Prompt you to destroy the infrastructure after testing.
          Launch Events: When a new instance is created.
          Termination Events: When an instance is terminated.
 
-📧 Email Notifications
+# 📧 Email Notifications
    Example Notifications
       Launch Event:
          Subject: EC2 Instance Launched
@@ -189,7 +189,7 @@ Prompt you to destroy the infrastructure after testing.
          Timestamp: 2025-01-21 15:30:00 UTC.
 
 
-🔍 Testing the Auto Scaling and Notifications
+# 🔍 Testing the Auto Scaling and Notifications
 1. Simulating High CPU Load
 Once an instance is launched, the setup_script.sh:
 Installs and starts the stress tool.
