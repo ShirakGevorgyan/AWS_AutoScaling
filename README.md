@@ -184,29 +184,28 @@ Before you begin, ensure the following are ready:
          - Termination Events: When an instance is terminated.
 
 # 📧 Email Notifications
-   Example Notifications
-      **Launch Event:**
-         Subject: EC2 Instance Launched
-         Body: A new EC2 instance has been launched with ID: i-12345678.  
-         CPU utilization: 55%.  
-         Timestamp: 2025-01-21 14:00:00 UTC.  
-      **Termination Event:**
-         Subject: EC2 Instance Terminated
-         Body: An EC2 instance has been terminated with ID: i-87654321.  
-         Reason: CPU utilization below threshold (20%).  
-         Timestamp: 2025-01-21 15:30:00 UTC.
+   **Launch Event:**
+         - Subject: EC2 Instance Launched
+         - Body: A new EC2 instance has been launched with ID: i-12345678.  
+         - CPU utilization: 55%.  
+         - Timestamp: 2025-01-21 14:00:00 UTC.  
+   **Termination Event:**
+         - Subject: EC2 Instance Terminated
+         - Body: An EC2 instance has been terminated with ID: i-87654321.  
+         - Reason: CPU utilization below threshold (20%).  
+         - Timestamp: 2025-01-21 15:30:00 UTC.
 
 
 # 🔍 Testing the Auto Scaling and Notifications
-1. Simulating High CPU Load
+   - Simulating High CPU Load
 Once an instance is launched, the setup_script.sh:
 Installs and starts the stress tool.
 Generates CPU load for 10 minutes, which triggers scaling.
-2. Receiving Notifications
+   - Receiving Notifications
 Email notifications are sent whenever:
 A new instance is launched.
 An existing instance is terminated.
-3. Verifying Scaling
+   - Verifying Scaling
 Use the AWS Management Console to verify:
 Instances being launched or terminated.
 Notifications sent via SNS.
