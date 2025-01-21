@@ -29,20 +29,6 @@ This project demonstrates the creation and configuration of a **scalable AWS Aut
 
 ---
 
-## 📂 Project Structure
-
-\`\`\`plaintext
-AWS_AutoScaling/
-├── terraform/
-│   ├── main.tf               # Main Terraform configuration
-│   ├── variables.tf          # Input variables for Terraform
-│   ├── outputs.tf            # Outputs from Terraform configuration
-│   ├── provider.tf           # AWS provider configuration
-│   ├── setup_script.sh       # Script for stress testing
-├── install_and_run.sh        # Script to automate Terraform execution
-└── README.md                 # Project documentation
-\`\`\`
-
 
 # Terraform Automation Script 🛠️
 
@@ -213,3 +199,17 @@ An existing instance is terminated.
 Use the AWS Management Console to verify:
 Instances being launched or terminated.
 Notifications sent via SNS.
+
+
+## 📂 Project Structure
+
+```plaintext
+AWS_AutoScaling/
+├── terraform/
+│   ├── main.tf               # Main Terraform configuration
+│   ├── variables.tf          # Input variables for Terraform
+│   ├── outputs.tf            # Outputs from Terraform configuration
+│   ├── provider.tf           # AWS provider configuration
+│   ├── setup_script.sh       # Script for stress testing
+├── install_and_run.sh        # Script to automate Terraform execution
+└── README.md                 # Project documentation
