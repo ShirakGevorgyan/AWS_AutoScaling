@@ -169,9 +169,10 @@ Prompt you to destroy the infrastructure after testing.
 3. **Stress Testing**
 
       **The setup_script.sh is executed on each EC2 instance:**
-         - 1. Installs the stress tool.
-         - 2. Simulates high CPU load for 10 minutes.
-         - 3. Triggers scaling events (scale up/down) based on CPU utilization.
+   
+         - Installs the stress tool.
+         - Simulates high CPU load for 10 minutes.
+         - Triggers scaling events (scale up/down) based on CPU utilization.
    
 5. **Auto Scaling Events**
       - Scaling Up: Launches new instances when CPU utilization exceeds 50%.
