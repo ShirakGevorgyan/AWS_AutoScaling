@@ -190,10 +190,10 @@ Before you begin, ensure the following are ready:
    - CPU utilization: 55%.  
    - Timestamp: 2025-01-21 14:00:00 UTC.  
    **Termination Event:**
-         - Subject: EC2 Instance Terminated
-         - Body: An EC2 instance has been terminated with ID: i-87654321.  
-         - Reason: CPU utilization below threshold (20%).  
-         - Timestamp: 2025-01-21 15:30:00 UTC.
+- Subject: EC2 Instance Terminated
+- Body: An EC2 instance has been terminated with ID: i-87654321.  
+- Reason: CPU utilization below threshold (20%).  
+- Timestamp: 2025-01-21 15:30:00 UTC.
 
 
 # 🔍 Testing the Auto Scaling and Notifications
