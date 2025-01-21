@@ -141,23 +141,23 @@ Before you begin, ensure the following are ready:
 
 # Clone the Repository
 
-git clone github.com/ShirakGevorgyan/AWS_AutoScaling.git
+- git clone github.com/ShirakGevorgyan/AWS_AutoScaling.git
 
-cd AWS_AutoScaling
+- cd AWS_AutoScaling
 
-Deploy the Infrastructure
+**Deploy the Infrastructure**
 
-Run the provided Bash script to initialize and apply the Terraform configuration:
+- Run the provided Bash script to initialize and apply the Terraform configuration:
 
-bash install_and_run.sh
+- bash install_and_run.sh
 
-This script will:
+**This script will:**
 
-Initialize Terraform.
+- Initialize Terraform.
 
-Apply the Terraform configuration.
+- Apply the Terraform configuration.
 
-Prompt you to destroy the infrastructure after testing.
+- Prompt you to destroy the infrastructure after testing.
 
 
 # ⚙️ Workflow and Testing
