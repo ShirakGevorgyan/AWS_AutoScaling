@@ -95,7 +95,7 @@ The infrastructure is defined using the following Terraform files:
 ## **3. Auto Scaling**
 The Auto Scaling Group is configured to handle resource scaling dynamically:
 - **Scale up**:  
-  Launches additional instances when CPU utilization exceeds **80%**.
+  Launches additional instances when CPU utilization exceeds **50%**.
 - **Scale down**:  
   Terminates instances when CPU utilization drops below **20%**.
 
@@ -141,17 +141,22 @@ Before you begin, ensure the following are ready:
 
 # Clone the Repository
 
-git clone git@github.com:ShirakGevorgyan/AWS_AutoScaling.git
+git clone github.com/ShirakGevorgyan/AWS_AutoScaling.git
+
 cd AWS_AutoScaling
 
 Deploy the Infrastructure
+
 Run the provided Bash script to initialize and apply the Terraform configuration:
 
 bash install_and_run.sh
+
 This script will:
 
 Initialize Terraform.
+
 Apply the Terraform configuration.
+
 Prompt you to destroy the infrastructure after testing.
 
 
@@ -177,12 +182,12 @@ Prompt you to destroy the infrastructure after testing.
 
 # 📧 Email Notifications
    Example Notifications
-      Launch Event:
+      # Launch Event:
          Subject: EC2 Instance Launched
          Body: A new EC2 instance has been launched with ID: i-12345678.  
          CPU utilization: 55%.  
          Timestamp: 2025-01-21 14:00:00 UTC.  
-      Termination Event:
+      # Termination Event:
          Subject: EC2 Instance Terminated
          Body: An EC2 instance has been terminated with ID: i-87654321.  
          Reason: CPU utilization below threshold (20%).  
