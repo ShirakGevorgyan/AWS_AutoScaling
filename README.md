@@ -185,10 +185,10 @@ Before you begin, ensure the following are ready:
 
 # 📧 Email Notifications
    **Launch Event:**
-         - Subject: EC2 Instance Launched
-         - Body: A new EC2 instance has been launched with ID: i-12345678.  
-         - CPU utilization: 55%.  
-         - Timestamp: 2025-01-21 14:00:00 UTC.  
+- Subject: EC2 Instance Launched
+- Body: A new EC2 instance has been launched with ID: i-12345678.  
+- CPU utilization: 55%.  
+- Timestamp: 2025-01-21 14:00:00 UTC.  
    **Termination Event:**
          - Subject: EC2 Instance Terminated
          - Body: An EC2 instance has been terminated with ID: i-87654321.  
