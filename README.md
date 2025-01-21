@@ -162,32 +162,34 @@ Prompt you to destroy the infrastructure after testing.
 
 # ⚙️ Workflow and Testing
 
-1. Terraform Configuration
+1. **Terraform Configuration**
+   
       Provisions Auto Scaling Groups, Launch Templates, CloudWatch Alarms, and SNS topics.
    
-3. Stress Testing
-      The setup_script.sh is executed on each EC2 instance:
+3. **Stress Testing**
+
+      **The setup_script.sh is executed on each EC2 instance:**
          1. Installs the stress tool.
          2. Simulates high CPU load for 10 minutes.
          3. Triggers scaling events (scale up/down) based on CPU utilization.
    
-5. Auto Scaling Events
+5. **Auto Scaling Events**
       Scaling Up: Launches new instances when CPU utilization exceeds 50%.
       Scaling Down: Terminates instances when CPU utilization drops below 20%.
 
-4. Notifications
+4. **Notifications**
       AWS SNS Integration: Sends email alerts for:
          Launch Events: When a new instance is created.
          Termination Events: When an instance is terminated.
 
 # 📧 Email Notifications
    Example Notifications
-      # Launch Event:
+      **Launch Event:**
          Subject: EC2 Instance Launched
          Body: A new EC2 instance has been launched with ID: i-12345678.  
          CPU utilization: 55%.  
          Timestamp: 2025-01-21 14:00:00 UTC.  
-      # Termination Event:
+      **Termination Event:**
          Subject: EC2 Instance Terminated
          Body: An EC2 instance has been terminated with ID: i-87654321.  
          Reason: CPU utilization below threshold (20%).  
