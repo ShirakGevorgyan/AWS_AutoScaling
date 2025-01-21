@@ -85,17 +85,21 @@ The infrastructure is defined using the following Terraform files:
 ---
 
 ## **2. Stress Testing**
-- The `setup_script.sh` is automatically executed on every EC2 instance during launch. It performs the following steps:
-  1. Installs the `stress` tool on the instance.
-  2. Waits for **1 minute** to ensure the instance is fully initialized.
-  3. Simulates high CPU load for **10 minutes**, causing the CPU utilization to exceed the threshold, which triggers the Auto Scaling mechanism.
+
+ **The `setup_script.sh` is automatically executed on every EC2 instance during launch. It performs the following steps:**
+   - Installs the `stress` tool on the instance.
+   - Waits for **1 minute** to ensure the instance is fully initialized.
+   - Simulates high CPU load for **10 minutes**, causing the CPU utilization to exceed the threshold, which triggers the Auto Scaling mechanism.
 
 ---
 
 ## **3. Auto Scaling**
+
 The Auto Scaling Group is configured to handle resource scaling dynamically:
+
 - **Scale up**:  
   Launches additional instances when CPU utilization exceeds **50%**.
+  
 - **Scale down**:  
   Terminates instances when CPU utilization drops below **20%**.
 
